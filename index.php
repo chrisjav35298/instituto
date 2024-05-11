@@ -1,60 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
+    <title>Título de tu página</title>
 
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.red.min.css"
-        />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.red.min.css">
     <style>
-
-
-        fieldset {
-        background-color: gainsboro;
+        :root {
+            color-scheme: light dark;
         }
-        @media (prefers-color-scheme: dark) {
-        fieldset {
-            background-color: darkslategray;
-        }
+        body {
+            display: grid;
+            place-content: center;
         }
     </style>
-    </head>
-    <body>
+</head>
+<body>
     <?php
-        //ingrese a la api por la url
-            $url = 'https://whenisthenextmcufilm.com/api';
+    // Ingresar a la API por la URL
+    $url = 'https://whenisthenextmcufilm.com/api';
 
-            // Realizar la solicitud GET
-            $response = file_get_contents($url);
+    // Realizar la solicitud GET
+    $response = file_get_contents($url);
 
-            // Decodificar la respuesta JSON
-            $datos = json_decode($response, true);
+    // Decodificar la respuesta JSON
+    $datos = json_decode($response, true);
+    ?>
 
-
-?>
-
-    <p>
-        Lorem ipsum dolor sit amet, legere ancillae ne vis.
-    </p>
-
-
-<main>
-<article>
-    <img src="https://image.tmdb.org/t/p/w500/ajnzOECvXpa7VcVx0RSlq39XgHe.jpg" alt="">
-    <h1><?php
-// estilos 
-
-?></h1>
-<?php
-echo ($datos['title']);
-// estilos 
-
-?>
-</article>
-</main>
-
-
-    </body>
+    <main>
+        <section>
+            <article style="width:90%">
+                <img src="<?php echo $datos['poster_url']; ?>" alt="Poster de la película">
+                <h1><?php echo $datos['title']; ?></h1>
+                <p><?php echo $datos['release_date']; ?></p>
+            </article>
+        </section>
+    </main>
+</body>
 </html>
