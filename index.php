@@ -34,7 +34,7 @@
             <article style="width:90%">
                 <img src="<?php echo $datos['poster_url']; ?>" alt="Poster de la película">
                 <h1><?php echo $datos['title']; ?></h1>
-                <p><?php echo $datos['release_date']; ?></p>
+                <p style="color:tomato; text-align:center;"><?php echo $datos['release_date']; ?></p>
             </article>
         </section>
     </main>
