@@ -12,7 +12,7 @@
         {
             "nombre": "Profesorado en Tecnología",
             "duracion": 4,
-            "descripcion": "Para los años ...",
+            "descripcion": "Este profesorado.....",
             "imagen":"https://instituto.zeabur.app/img/prof.jpg"
         },
         {
@@ -20,6 +20,7 @@
             "duracion": 3,
             "descripcion": "El egresado de la tecnicatura.....",
             "campo_laboral": "Empresas, Instituciones gubernamentales,..."
+            "imagen":"https://instituto.zeabur.app/img/syh.png"
         }
     ]
 }
