@@ -12,7 +12,8 @@
         {
             "nombre": "Profesorado en Tecnología",
             "duracion": 4,
-            "descripcion": "Para los años ..."
+            "descripcion": "Para los años ...",
+            "imagen":"https://instituto.zeabur.app/img/prof.jpg"
         },
         {
             "nombre": "Tecnicatura en Seguridad e Higiene",
