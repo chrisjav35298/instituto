@@ -30,13 +30,20 @@
     ?>
 
     <main>
-        <section>
+    <h2>Disponibles</h2>
+
+        <ul>
+        <p><a href="instituto.php">instituto</a></p>
+        <p><a href="#">algo</a></p>
+        </ul>
+        <!-- <section>
             <article style="width:90%">
                 <img src="<?php echo $datos['poster_url']; ?>" alt="Poster de la película">
                 <h1><?php echo $datos['title']; ?></h1>
                 <p style="color:tomato; text-align:center;"><?php echo $datos['release_date']; ?></p>
             </article>
-        </section>
+        </section> -->
+        
     </main>
 </body>
 </html>
