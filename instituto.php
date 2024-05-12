@@ -19,7 +19,7 @@
             "nombre": "Tecnicatura en Seguridad e Higiene",
             "duracion": 3,
             "descripcion": "El egresado de la tecnicatura.....",
-            "campo_laboral": "Empresas, Instituciones gubernamentales,..."
+            "campo_laboral": "Empresas, Instituciones gubernamentales,...",
             "imagen":"https://instituto.zeabur.app/img/syh.png"
         }
     ]
